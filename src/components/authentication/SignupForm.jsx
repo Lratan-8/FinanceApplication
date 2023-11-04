@@ -19,9 +19,9 @@ const SignupForm = (props) => (
     onFinishFailed={onFinishFailed}
     autoComplete="off"
   >
-    <Row>
-      <Col span={24}>
-      <p style={{color: props.theme.textColor}}>Enter your name</p>
+    <Row align='center'>
+      <Col span={20}>
+        <p style={{ color: props.theme.textColor }}>Enter your name</p>
         <Form.Item
           name="name"
           rules={[
@@ -34,9 +34,9 @@ const SignupForm = (props) => (
           <Input />
         </Form.Item>
       </Col>
-      
-      <Col span={24}>
-      <p style={{color: props.theme.textColor}}>Enter your email</p>
+
+      <Col span={20}>
+        <p style={{ color: props.theme.textColor }}>Enter your email</p>
         <Form.Item
           name="email"
           rules={[
@@ -49,8 +49,8 @@ const SignupForm = (props) => (
           <Input type="email" />
         </Form.Item>
       </Col>
-      <Col span={24}>
-        <p style={{color: props.theme.textColor}}>Username</p>
+      <Col span={20}>
+        <p style={{ color: props.theme.textColor }}>Username</p>
         <Form.Item
           name="username"
           rules={[
@@ -63,9 +63,8 @@ const SignupForm = (props) => (
           <Input />
         </Form.Item>
       </Col>
-      <Col span={24}>
-        
-      <p style={{color: props.theme.textColor}}>Password</p>
+      <Col span={20}>
+        <p style={{ color: props.theme.textColor }}>Password</p>
         <Form.Item
           name="password"
           rules={[
@@ -78,7 +77,6 @@ const SignupForm = (props) => (
           <Input.Password />
         </Form.Item>
       </Col>
-   
 
       <Col span={24}>
         <Form.Item

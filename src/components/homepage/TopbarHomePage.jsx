@@ -6,12 +6,8 @@ import logoDarkBackgroundLess from '../../assets/logoDarkBackgroundLess.png'
 
 export default function TopbarHomePage(props) {
 
-  const themeChange = () => {
-    setTheme("light");
-  };
-
   return (
-    <div className="topbarhomepage">
+    <div className="topbarhomepage" style={{backgroundColor: props.theme.themeDark}}>
     <div style={{width: '24.5%'}}>
         <img src={logoDarkBackgroundLess}></img>
     </div>
@@ -20,7 +16,7 @@ export default function TopbarHomePage(props) {
     </div>
       <div>
         <BsMoonStarsFill color={props.theme.textColor}/>
-        <Switch onClick={themeChange} />
+        <Switch onClick={props.changeTheme} />
         <BsSun color={props.theme.textColor}/>
       </div>
     </div>

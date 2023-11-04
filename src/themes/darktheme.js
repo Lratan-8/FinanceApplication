@@ -1,5 +1,7 @@
 const darktheme = {
-    textColor: '#FAF9F6'
+    textColor: '#FAF9F6',
+    themeDark: '#121212',
+    themeLightDark: '#1D1D1D',
     
 }
 
